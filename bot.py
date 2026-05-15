@@ -73,7 +73,7 @@ async def repondre_client(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
     await update.message.reply_text("✅ Message envoyé au client !")
 
-app.run_polling(allowed_updates=Update.ALL_TYPES)
+app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("delais", delais))
 app.add_handler(CommandHandler("repondre", repondre_client))
