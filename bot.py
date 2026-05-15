@@ -2,7 +2,7 @@ import logging
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = 8723770508:AAHnSWNzErJYZBiMTzPCyvTWTu_cXeeCS4I
+TOKEN TOKEN = "8723770508:AAHnSWNzErJYZBiMTzPCyvTWTu_cXeeCS4I"
 TON_ID = 8723770508  # Ton ID Telegram perso
 
 logging.basicConfig(level=logging.INFO)
